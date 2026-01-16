@@ -40,7 +40,7 @@ fun main() {
         println(libro1)
         println(libro2)
 
-        //(debe lanzar excepción)
+        //debe lanzar excepción
         val libroError = Libro("", "Autor desconocido")
 
     } catch (e: Exception) {
