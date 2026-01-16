@@ -1,3 +1,5 @@
+package org.iesra
+
 class CuentaBancaria(private val titular: String) {
 
     private var saldo: Double = 0.0
@@ -7,7 +9,6 @@ class CuentaBancaria(private val titular: String) {
             throw IllegalArgumentException("No se puede ingresar una cantidad igual o menor que 0")
         }
         saldo += cantidad
-        println("Ingreso realizado. Saldo actual: $saldo €")
     }
 
     fun retirar(cantidad: Double) {
@@ -18,7 +19,6 @@ class CuentaBancaria(private val titular: String) {
             throw IllegalStateException("No hay saldo suficiente para retirar $cantidad €")
         }
         saldo -= cantidad
-        println("Retiro realizado. Saldo actual: $saldo €")
     }
 }
 

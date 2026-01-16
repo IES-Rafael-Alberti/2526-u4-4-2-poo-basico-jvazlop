@@ -1,3 +1,5 @@
+package org.iesra
+
 class Vehiculo(
     private val marca: String,
     private val modelo: String
